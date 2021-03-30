@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu {
+  height: 80vmin;
+  width: 80vmin;
+  border: 1px solid red;
+}
+.hamburger-menu > div {
+  height: calc(100% / 7);
+  width: calc(100% * 5 / 7);
+  background-color: salmon;
+}
