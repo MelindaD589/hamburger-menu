@@ -10,8 +10,8 @@ body {
 }
 
 .hamburger-menu {
-  height: 80vmin;
-  width: 80vmin;
+  height: 10vmin;
+  width: 10vmin;
   border: 1px solid red;
   position: relative;
   display: flex;
@@ -34,14 +34,14 @@ body {
   transform: translateY(250%) rotate(0);
 }
 
-.hamburger-menu:hover > div:nth-child(1) {
+.hamburger-menu.open > div:nth-child(1) {
   transform: translateY(0) rotate(315deg);
 }
 
-.hamburger-menu:hover > div:nth-child(2) {
+.hamburger-menu.open > div:nth-child(2) {
   opacity: 0%;
 }
 
-.hamburger-menu:hover > div:nth-child(3) {
+.hamburger-menu.open > div:nth-child(3) {
   transform: translateY(0) rotate(405deg);
 }
