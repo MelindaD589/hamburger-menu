@@ -13,9 +13,35 @@ body {
   height: 80vmin;
   width: 80vmin;
   border: 1px solid red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hamburger-menu > div {
-  height: calc(100% / 7);
-  width: calc(100% * 5 / 7);
+  height: calc(100% / 10);
+  width: calc(100% * 8 / 10);
   background-color: salmon;
+  position: absolute;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.hamburger-menu > div:nth-child(1) {
+  transform: translateY(-250%) rotate(0);
+}
+
+.hamburger-menu > div:nth-child(3) {
+  transform: translateY(250%) rotate(0);
+}
+
+.hamburger-menu:hover > div:nth-child(1) {
+  transform: translateY(0) rotate(315deg);
+}
+
+.hamburger-menu:hover > div:nth-child(2) {
+  opacity: 0%;
+}
+
+.hamburger-menu:hover > div:nth-child(3) {
+  transform: translateY(0) rotate(405deg);
 }
